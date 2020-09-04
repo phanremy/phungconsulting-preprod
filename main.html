@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>PHUNG Consulting</title>
+    <link rel="icon" type="image/gif" href="ima/logo.gif">
+    <style type="text/css">
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .fond
+      {
+        background-image: url(ima/phung_bandeau_fond.jpg); height: auto; width: auto; background-repeat: no-repeat; background-position: left top; color: #FFFFFF; background-color: #FFFFFF
+      }
+
+      .master-banner {
+        padding: 100px 0;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(diaporama/phung1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        color: white;
+      }
+/*
+      @media (max-width: 575.98px) {
+        .master-banner {
+          padding: 100px 0;
+        }
+      }*/
+
+      .master-banner > .container {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .secondary-banner {
+        padding: 400px 0;
+        background-image: url(ima/portfolio.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
+
+      .row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+
+      .asset {
+        display: flex;
+        // min-width: 300px;
+      }
+
+      .asset-text{
+        text-align: left;
+        padding-left: 8px;
+        padding-top:16px;
+      }
+
+      .container-home h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      .asset-text h2 {
+        padding-bottom: 8px;
+      }
+
+      .asset-img {
+        min-width: 80px;
+        text-align: center;
+      }
+
+      .asset-img {
+        /* Image are now emojis, since Fontawesome needs to be downloaded for icons */
+        font-size: 50px;
+      }
+
+      .footer {
+        display: flex;
+        padding: 16px;
+        justify-content: space-around;
+        background-color: #253347;
+        color: lightgrey;
+      }
+
+      .bureaux-coordonnees > p {
+        margin-bottom: 0px;
+      }
+
+/*      @media (max-width: 575.98px) {
+        .container {
+          max-width: 100% !important;
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+        }
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .container {
+          max-width: 100% !important;
+          margin-left: 0px !important;
+          margin-right: 0px !important;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .container {
+
+        }
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .container {
+
+        }
+      }*/
+
+    </style>
+
+    <link rel="Stylesheet" href="phung_style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color: #F4F4F4">
+
+<!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-light" style="background-color: #F4F4F4;">
+      <div style="width:64px"></div>
+      <img src="ima/logo.png" alt="" width="107">
+      <div class="d-flex justify-content-center">
+        <a href="#english-text" class="px-2">
+          <span style="font-size:20px">🇬🇧</span>
+        </a>
+        <a href="mailto:contact@phungconsulting.fr" class="px-2">
+          <img src="icons/envelope.svg" alt="" height="18">
+        </a>
+        <a href="tel:+33 (0)1 88 27 23 08" class="px-2">
+          <img src="icons/phone.svg" alt="" height="18">
+        </a>
+      </div>
+    </nav>
+
+<!-- MASTER BANNER -->
+    <div class="master-banner" id="master-banner">
+      <div class="container text-center">
+          <p data-aos="fade-down-right" data-aos-duration="3000">Phung Consulting</p>
+          <p data-aos="fade-down-right" data-aos-duration="3000" data-aos-delay="3000">Ingénierie en génie climatique, électrique, énergétique et environnemental</p>
+          <br><a href="#contact" class="btn btn-success px-5">Contact</a>
+      </div>
+    </div>
+
+<!-- PORTFOLIO -->
+    <div id="portfolio-links">
+      <div class="bg-white py-5">
+        <div class="container">
+          <div class="row justify-content-center py-2">
+            <div class="col-10 col-lg-6 align-items-center text-center">
+              <img class="card-img-top rounded" src="ima/PhotosProjets/GreenOffice/green_office_3.jpg" alt="Card image cap" style="width:60%">
+            </div>
+            <div class="col-10 col-lg-6 align-items-center pt-3 pt-lg-5" data-aos="fade-up" data-aos-easing="linear">
+              <h4>Activités - domaines</h4>
+              Etudes de conception depuis l'avant projet jusqu'au dossier d'appel d'offres et suivi de chantier
+            </div>
+          </div>
+          <div class="row justify-content-center py-2">
+            <div class="col-10 col-lg-6 align-items-center order-lg-last text-center">
+              <img class="card-img-top rounded" src="ima/PhotosProjets/JURMALA/jurmala_7.jpg" alt="Card image cap" style="width:60%">
+            </div>
+            <div class="col-10 col-lg-6 align-items-center pt-3 pt-lg-5" data-aos="fade-up" data-aos-easing="linear">
+              <h4>Nos domaines</h4>
+              Réalisation des installations en génie climatique, en plomberie-sanitaire et en éléctricité
+            </div>
+          </div>
+          <div class="row justify-content-center py-2">
+            <div class="col-10 col-lg-6 align-items-center text-center">
+              <img class="card-img-top rounded" src="ima/PhotosProjets/LeMerrain/le_merrain_4.jpg" alt="Card image cap" style="width:60%">
+            </div>
+            <div class="col-10 col-lg-6 align-items-center pt-3 pt-lg-5" data-aos="fade-up" data-aos-easing="linear" >
+              <h4>Nos missions</h4>
+              Assistance à la maitrise d'ouvrage : accompagnement de la conception du projet à l'explotation du site
+              <p>Maitrise d'œuvre : suivi des projets depuis le concours jusqu'à la réception du chantier</p>
+            </div>
+          </div>
+          <div class="row justify-content-center py-2">
+            <div class="col-10 col-lg-6 align-items-center order-lg-last text-center">
+              <img class="card-img-top rounded" src="ima/PhotosProjets/MDH/mdh_4.JPG" alt="Card image cap" style="width:60%">
+            </div>
+            <div class="col-10 col-lg-6 align-items-center pt-3 pt-lg-5" data-aos="fade-up" data-aos-easing="linear" >
+              <h4>Notre secteur d'activité</h4>
+              Batiments tertiaires industriels ou résidentiels et collectifs
+            </div>
+          </div>
+          <div class="row justify-content-center py-2">
+            <div class="col-10 col-lg-6 align-items-center text-center">
+              <img class="card-img-top rounded" src="ima/PhotosProjets/Observatoire/observatoire_3.jpg" alt="Card image cap" style="width:60%">
+            </div>
+            <div class="col-10 col-lg-6 align-items-center pt-3 pt-lg-5" data-aos="fade-up" data-aos-easing="linear" >
+              <h4>Notre philosophie</h4>
+              Solution sur mesure, respect des délais, des coûts et de l'impact environnemental.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- PORTFOLIO BANNER -->
+    <div class="secondary-banner" id="secondary-banner">
+      <div class="container container-home text-center">
+        <a href="ima/portfolio.jpg" target="_blank" class="btn btn-success btn-lg">Portfolio des travaux en cours</a>
+      </div>
+    </div>
+
+<!-- ENGLISH SECTION -->
+    <div class="py-5" id="english-text">
+      <div class="container">
+        <h2>Climatic, electric, energetic and environmental engineer</h2>
+        <div class="row">
+          <div class="col-12 col-lg-6 py-lg-2 pt-2 bg-white">
+            <p>In the field of Thermal Environment (Heating, Ventilation, Air-conditioning and Smoke clearing) and of Sanitary Facilities (Plumbing), I am able to propose all the missions including the control of design from the feasibility of a project until the delivery of a job.</p>
+            <p class="pt-4">According to the complexity of the project and the wishes of the customer, the missions can be declined as follows:</p>
+            <ul>
+             <li>Studies of programming defining the needs of the users of buildings;</li>
+             <li>Audits and thermal diagnoses of the existing buildings;</li>
+             <li>Recommendations in the technico-economic field and studies (investment, exploitation, profitability);</li>
+             <li>Outline project with pilot study of various possible solutions;</li>
+             <li>Estimate or detailed figuring of the labor costs;</li>
+             <li>Assistance with the architect for the deposit of a permit building or a declaration of work;</li>
+             <li>Assistance with the deposit of a declaration of installation classified for environmental protection (boiler room, refrigerating production…);</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 py-lg-2 bg-white">
+            <ul>
+              <li>Summary preliminary draft for definition of the services;</li>
+              <li>Detailed preliminary draft for the dimensioning of the installations;</li>
+              <li>File-project and Tender documents of the companies;</li>
+              <li>Assistance in the making of the markets with comparative analysis of the estimates of companies;</li>
+              <li>Control of the execution documents of the companies;</li>
+              <li>Control of the works in course of execution;</li>
+              <li>Works preliminary to the reception;</li>
+              <li>Finalization of the works of the companies;</li>
+              <li>H.Q.E. steps</li>
+            </ul>
+            <p>My skills are particularly orientated towards the global or partial construction or restoration of tertiary, industrial or residential buildings, such as buildings of offices, residences hotel, shops and banking agencies, space of exposure and museographic.</p>
+            <p>I’m working for building owners, patrimonial investors, property developers, project superintendents, architects, or contractors in important research departments.</p>
+            <p>My activity is covered by a professional insurance EUROMAF (Mutual of the French Architect).</p>
+            <a href="pdf/2020_Phung_Consulting_References_english.pdf">Download our references in PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- PARTENAIRES -->
+<!--     <div id="tabs">
+      <%= render 'shared/tabs' %>
+    </div>
+
+    <div id="assets">
+      <div style="background-color:#F4F4F4" class="py-5">
+        <div class="container-home text-center">
+          <h2> Partenaires.</h2>
+           <div class="row justify-content-center" style="margin:0px">
+            <div class="col-10 col-lg-3">
+              <div class="asset">
+                <div class="asset-img">
+                  ❤️
+                </div>
+                <div class="asset-text">
+                  <h2>Passion</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-3">
+              <div class="asset">
+                <div class="asset-img">
+                  💡
+                </div>
+                <div class="asset-text">
+                  <h2>Creativity</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-3">
+              <div class="asset">
+                <div class="asset-img">
+                  ⭐️
+                </div>
+                <div class="asset-text">
+                 <h2>Quality</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+<!-- CARTES NON UTILISES -->
+<!--     <div class="py-5" id="cards">
+      <div class="container container-home text-center">
+        <h2> Les Références de Phung Consulting</h2>
+        <div class="cards">
+          <% @url_image_path = "https://source.unsplash.com/random/200x200" %>
+          <%= render "shared/vertical-card" %>
+          <% @url_image_path = "https://source.unsplash.com/random/200x199" %>
+          <%= render "shared/vertical-card" %>
+          <% @url_image_path = "https://source.unsplash.com/random/199x199" %>
+          <%= render "shared/vertical-card" %>
+        </div>
+      </div>
+    </div>
+ -->
+
+ <!-- CONTACT -->
+    <div style="background-color: white" class="py-5" id="contact">
+      <div class="container container-home">
+        <h2 class="text-center"> Une question? Envie de collaborer?</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <p>Contactez Lydie PHUNG, gérante</p>
+            <p style="margin:0px"><small>Code APE/NAF : 7112 B - Ingénierie, études techniques</small></p>
+            <p style="margin:0px"><small>N° SIREN : 492 583 539 RCS Créteil</small></p>
+            <p style="margin:0px"><small>EURL au capital de 30 000€</small></p>
+            <p style="margin:0px"><small>TVA : FR 55 49 25 83 53 – TVA sur encaissement</small></p>
+            <p style="margin:0px"><small>EUROMAF-ID : 7383027/E/10 - N° POLICE : 7003094/S</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="" class="py-5">
+      <div class="container container-home">
+        <h2 class="text-center"> Venez nous rencontrer</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="text-center">
+              <img src="ima/phung_vincennes.jpg" alt="Locaux Phung Consulting Vincennes" width="250" border="0">
+            </div>
+            <div class="py-2 bureaux-coordonnees">
+              <p>Bureaux :</p>
+              <p>110, rue de Fontenay 94300 Vincennes</p>
+              <p>Tél : <a href="tel:+33 (0)1 88 27 23 08">+33 (0)1 88 27 23 08</a></p>
+              <p>Email : <a href="mailto:contact@phungconsulting.fr">contact@phungconsulting.fr</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--     <div id="social-footer">
+      <%= render 'shared/social-links' %>
+    </div> -->
+
+<!-- FOOTER -->
+    <div id="master-footer">
+      <div style="background-color: #2B4155" class="py-5">
+        <div class="container container-home">
+          <div class="row justify-content-center">
+            <div class="col-6 col-lg-3 py-2 text-white">
+              <h2>QUI NOUS SOMMES</h2>
+            </div>
+            <div class="col-6 col-lg-3 py-2 text-white">
+              <h2>TELECHARGEMENTS</h2>
+              <p><a href="pdf/2020_Phung_Consulting_References_francais.pdf" class="text-white">Références 🇫🇷</a></p>
+              <p><a href="pdf/2020_Phung_Consulting_References_english.pdf" class="text-white">References 🇬🇧</a></p>
+            </div>
+            <div class="col-6 col-lg-3 py-2 text-white">
+              <h2>NOUS CONTACTER</h2>
+              <p><a href="mailto:contact@phungconsulting.fr" class="text-white">Email</a></p>
+              <p><a href="tel:+33 (0)1 88 27 23 08" class="text-white">Téléphone</a></p>
+            </div>
+            <div class="col-6 col-lg-3 py-2 text-white">
+              <h2>NOS PARTENAIRES</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer">
+        <div>© Phung Consulting</div>
+        <div>Site en préproduction</div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>
